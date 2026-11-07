@@ -1,0 +1,600 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d87dbda9560c6e43a027753c5df73dd, type: 3}
+  m_Name: GameCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::VictorianAristocrat.GameCatalog
+  goods:
+  - id: wood
+    displayName: Odun
+    kind: 0
+    basePrice: 7
+    weight: 2
+    extractable: 1
+  - id: grain
+    displayName: "Tah\u0131l"
+    kind: 1
+    basePrice: 8
+    weight: 2
+    extractable: 1
+  - id: iron
+    displayName: Demir cevheri
+    kind: 0
+    basePrice: 13
+    weight: 3
+    extractable: 1
+  - id: coal
+    displayName: "K\xF6m\xFCr"
+    kind: 0
+    basePrice: 11
+    weight: 3
+    extractable: 1
+  - id: sulfur
+    displayName: "S\xFClf\xFCr"
+    kind: 0
+    basePrice: 18
+    weight: 2
+    extractable: 1
+  - id: cotton
+    displayName: Pamuk
+    kind: 0
+    basePrice: 9
+    weight: 2
+    extractable: 1
+  - id: wool
+    displayName: "Y\xFCn"
+    kind: 0
+    basePrice: 10
+    weight: 2
+    extractable: 1
+  - id: food
+    displayName: "\u0130\u015Flenmi\u015F g\u0131da"
+    kind: 1
+    basePrice: 18
+    weight: 1
+    extractable: 0
+  - id: cloth
+    displayName: "Kuma\u015F"
+    kind: 2
+    basePrice: 22
+    weight: 1
+    extractable: 0
+  - id: metal
+    displayName: Metal
+    kind: 2
+    basePrice: 28
+    weight: 2
+    extractable: 0
+  - id: arms
+    displayName: Silah
+    kind: 3
+    basePrice: 65
+    weight: 2
+    extractable: 0
+  - id: timber
+    displayName: Kereste
+    kind: 2
+    basePrice: 16
+    weight: 2
+    extractable: 0
+  countries:
+  - name: "Alder Krall\u0131\u011F\u0131"
+    primary: {r: 0.12, g: 0.25, b: 0.48, a: 1}
+    secondary: {r: 0.94, g: 0.75, b: 0.35, a: 1}
+  - name: Vesper Cumhuriyeti
+    primary: {r: 0.6, g: 0.15, b: 0.18, a: 1}
+    secondary: {r: 0.96, g: 0.88, b: 0.72, a: 1}
+  - name: "Caldria Birli\u011Fi"
+    primary: {r: 0.16, g: 0.44, b: 0.3, a: 1}
+    secondary: {r: 0.91, g: 0.86, b: 0.61, a: 1}
+  - name: Meridia Federasyonu
+    primary: {r: 0.4, g: 0.23, b: 0.52, a: 1}
+    secondary: {r: 0.92, g: 0.68, b: 0.26, a: 1}
+  settlements:
+  - id: 0
+    region: 0
+    country: 0
+    displayName: "Alderwick \xB7 Kuzey Vadisi"
+    city: 1
+    specialty: grain
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -2300, y: 1700}
+  - id: 1
+    region: 0
+    country: 0
+    displayName: Millbrook
+    city: 0
+    specialty: grain
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -2480, y: 1340}
+  - id: 2
+    region: 0
+    country: 0
+    displayName: Wheatford
+    city: 0
+    specialty: grain
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -1940, y: 1400}
+  - id: 3
+    region: 1
+    country: 0
+    displayName: "Blackford \xB7 K\xF6m\xFCr S\u0131rt\u0131"
+    city: 1
+    specialty: coal
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -1700, y: 2600}
+  - id: 4
+    region: 1
+    country: 0
+    displayName: Cinderfield
+    city: 0
+    specialty: coal
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -2020, y: 2360}
+  - id: 5
+    region: 1
+    country: 0
+    displayName: Ashdale
+    city: 0
+    specialty: sulfur
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -1440, y: 2820}
+  - id: 6
+    region: 2
+    country: 1
+    displayName: "Westhaven \xB7 K\u0131y\u0131 Ovas\u0131"
+    city: 1
+    specialty: wood
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 1
+    island: 0
+    position: {x: 600, y: 1560}
+  - id: 7
+    region: 2
+    country: 1
+    displayName: Seabury
+    city: 0
+    specialty: wood
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 1
+    island: 1
+    position: {x: 2300, y: 1500}
+  - id: 8
+    region: 2
+    country: 1
+    displayName: Harborfell
+    city: 0
+    specialty: wool
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: 300, y: 1200}
+  - id: 9
+    region: 3
+    country: 1
+    displayName: "Ironmere \xB7 Demir Da\u011Flar\u0131"
+    city: 1
+    specialty: iron
+    initialCrisis: 1
+    crisisSeverity: 4
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -500, y: 2500}
+  - id: 10
+    region: 3
+    country: 1
+    displayName: Forgeham
+    city: 0
+    specialty: iron
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -780, y: 2160}
+  - id: 11
+    region: 3
+    country: 1
+    displayName: Orestead
+    city: 0
+    specialty: coal
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -140, y: 2740}
+  - id: 12
+    region: 4
+    country: 2
+    displayName: "Cottonbridge \xB7 Pamuk Deltas\u0131"
+    city: 1
+    specialty: cotton
+    initialCrisis: 2
+    crisisSeverity: 4
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -2200, y: -300}
+  - id: 13
+    region: 4
+    country: 2
+    displayName: Reedbank
+    city: 0
+    specialty: cotton
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -2560, y: 60}
+  - id: 14
+    region: 4
+    country: 2
+    displayName: Loomstead
+    city: 0
+    specialty: grain
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -1760, y: -660}
+  - id: 15
+    region: 5
+    country: 2
+    displayName: "Oakford \xB7 Bat\u0131 Ormanlar\u0131"
+    city: 1
+    specialty: wood
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -2700, y: -2000}
+  - id: 16
+    region: 5
+    country: 2
+    displayName: Pineford
+    city: 0
+    specialty: wood
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -2440, y: -1640}
+  - id: 17
+    region: 5
+    country: 2
+    displayName: Woodmere
+    city: 0
+    specialty: wood
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -2180, y: -2160}
+  - id: 18
+    region: 6
+    country: 3
+    displayName: "Southport \xB7 G\xFCney Liman\u0131"
+    city: 1
+    specialty: sulfur
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 1
+    island: 0
+    position: {x: 600, y: -1400}
+  - id: 19
+    region: 6
+    country: 3
+    displayName: Saltwick
+    city: 0
+    specialty: sulfur
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 1
+    island: 1
+    position: {x: 2300, y: -1500}
+  - id: 20
+    region: 6
+    country: 3
+    displayName: Cliffport
+    city: 0
+    specialty: cotton
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: 180, y: -1140}
+  - id: 21
+    region: 7
+    country: 3
+    displayName: "Eastmoor \xB7 Do\u011Fu Yaylas\u0131"
+    city: 1
+    specialty: wool
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 1
+    port: 0
+    island: 0
+    position: {x: -500, y: -2500}
+  - id: 22
+    region: 7
+    country: 3
+    displayName: Heatherfield
+    city: 0
+    specialty: wool
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -820, y: -2200}
+  - id: 23
+    region: 7
+    country: 3
+    displayName: Shepherdsby
+    city: 0
+    specialty: iron
+    initialCrisis: 0
+    crisisSeverity: 0
+    station: 0
+    port: 0
+    island: 0
+    position: {x: -160, y: -2780}
+  routes:
+  - from: 0
+    to: 1
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 0
+    to: 2
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 3
+    to: 4
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 3
+    to: 5
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 6
+    to: 8
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 9
+    to: 10
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 9
+    to: 11
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 12
+    to: 13
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 12
+    to: 14
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 15
+    to: 16
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 15
+    to: 17
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 18
+    to: 20
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 21
+    to: 22
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 21
+    to: 23
+    kind: 0
+    days: 1
+    fare: 5
+    capacity: 500
+  - from: 0
+    to: 3
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 0
+    to: 3
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 3
+    to: 9
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 3
+    to: 9
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 9
+    to: 6
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 9
+    to: 6
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 6
+    to: 18
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 6
+    to: 18
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 18
+    to: 21
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 18
+    to: 21
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 21
+    to: 15
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 21
+    to: 15
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 15
+    to: 12
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 15
+    to: 12
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 12
+    to: 0
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 12
+    to: 0
+    kind: 1
+    days: 1
+    fare: 35
+    capacity: 180
+  - from: 0
+    to: 9
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 12
+    to: 21
+    kind: 0
+    days: 2
+    fare: 20
+    capacity: 500
+  - from: 6
+    to: 7
+    kind: 2
+    days: 1
+    fare: 20
+    capacity: 250
+  - from: 18
+    to: 19
+    kind: 2
+    days: 1
+    fare: 20
+    capacity: 250
+  - from: 6
+    to: 18
+    kind: 2
+    days: 2
+    fare: 48
+    capacity: 250
